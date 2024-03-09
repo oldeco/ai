@@ -7,47 +7,41 @@ body, html {
   margin: 0;
 }
 
-.bg {
-  /* The image used */
-  background-image: url("df5py0l-22160cb0-c8ec-42e6-bfde-1a59b802a4f7.mp4");
-
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
-}
-  .im {
-  /* The image used */
-  background-image: url("sas.png");
-
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-  #myVideo {
+#myVideo {
   position: fixed;
   right: 0;
   bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
+  width: 100%; 
+  height: 100%;
+  object-fit: cover; /* Ensure video covers the whole screen */
+}
+
+.overlayImage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("sas.png"); /* Update this with your image URL */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* This will cover the entire screen, adjust as necessary */
+  opacity: 0.5; /* Adjust opacity to make the video visible underneath, remove if not needed */
 }
 </style>
 </head>
 <body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="https://bit.ly/3Sh8xy7" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="overlayImage"></div>
+
 <p><a href="https://t.me/iluminahtee">
 <img src="xtelegram.png" alt="iluminahtee" width="200" height="200">
 </a></p>
-  <video autoplay muted loop id="myVideo">
-  <source src="https://bit.ly/3Sh8xy7" type="video/mp4">
-</video>
-<div class="bg"></div>
 
 </body>
 </html>
