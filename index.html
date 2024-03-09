@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <style>
@@ -29,11 +30,9 @@ body, html {
 
 .middle-left-link {
   position: fixed;
-  top: 50%; /* Adjusts to vertically center */
   left: 0; /* Adjust if you want it a bit more to the right */
-  transform: translateY(-50%); /* Ensures it's centered at the exact middle on the y-axis */
+  transform: translateY(-50%); /* Adjusts for the exact middle on the y-axis */
 }
-
 </style>
 </head>
 <body>
@@ -45,19 +44,17 @@ body, html {
 
 <div class="overlayImage"></div>
 
-<!-- Update href to your desired URL and src to your image path -->
-<a href="https://t.me/c/2127695181/2027" class="middle-left-link">
-  <img src="xtelegram.png" alt="Descriptive Text" width="300" height="300">
+<a href="https://t.me/c/2127695181/2027" style="top: 30%; transform: translateY(-50%);" class="middle-left-link">
+  <img src="xtelegram.png" alt="Telegram" width="300" height="300">
 </a>
-  <br>
-  <a href="https://twitter.com/iluminahtee" class="middle-left-link">
-  <img src="xtwitter.png" alt="Descriptive Text" width="300" height="300">
+
+<a href="https://twitter.com/iluminahtee" style="top: 50%; transform: translateY(-50%);" class="middle-left-link">
+  <img src="xtwitter.png" alt="Twitter" width="300" height="300">
 </a>
-  <br>
-  <a href="" class="middle-left-link">
-  <img src="xdex.png" alt="Descriptive Text" width="300" height="300">
+
+<a href="your-link-here" style="top: 70%; transform: translateY(-50%);" class="middle-left-link">
+  <img src="xdex.png" alt="Your Description" width="300" height="300">
 </a>
-  <br>
 
 </body>
 </html>
